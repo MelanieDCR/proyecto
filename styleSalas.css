@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.menu {
+    
+    position: sticky;
+    top: 0;
+}
+
+.navegacion {
+    background-image: linear-gradient(to right, rgb(215, 67, 87), rgb(241, 79, 58) 59%, rgb(239, 100, 47));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    z-index: 10;
+}
+
+.navegacion h1 {
+    color: white;
+}
+
+.navegacion img {
+    width: 6rem;
+}
+
+.navegacion .nav-links {
+    list-style: none;
+}
+
+.navegacion .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navegacion .nav-links li:hover {
+    transform: scale(1.2);
+}
+
+.navegacion .nav-links a {
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+    color: crimson;
+}
+.titulos {
+	font-size: 500%;
+	
+	text-align: center;
+}
+
+.bottom {
+    font-weight: 700;
+    color: whitesmoke;
+    padding: 9px 25px;
+    background: whitesmoke;
+    border: none;
+    border-radius: 50px;
+
+}
+
+.bottom:hover {
+    color: rgba(245, 245, 245, 0.842);
+    background: rgba(245, 245, 245, 0.664);
+}
+
+.btn_registry {
+    border: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    /*Flexbox*/
+    display: flex;
+    gap: 20px; 
+    display: grid;
+    grid-template-columns: 3fr auto;
+    gap: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    /*Flexbox*/
+    text-align: left;
+    width: 100%;
+
+}
+
+
+
+.banner {
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center center;
+
+    /*Flexbox */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+
+    
+}
+
+.banner .boton {
+    background: #FFD600;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+
+
+.video{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    opacity: 90%;
+}
+
+
+
+.img-sala img {
+    text-align: left;
+}
+.salas {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media screen and (min-width:737px) {
+    .salas {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media screen and (min-width: 1102px) {
+    .salas {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+}
+.pie-pagina {
+    background-color: crimson;
+    color: aliceblue;
+}

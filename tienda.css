@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.menu {
+    
+    position: sticky;
+    top: 0;
+}
+
+.navegacion {
+    background-image: linear-gradient(to right, rgb(215, 67, 87), rgb(241, 79, 58) 59%, rgb(239, 100, 47));
+   /* background-image: linear-gradient(to right, rgb(255, 218, 216), rgb(221,121,121) 59%, rgb(216, 74, 64));*/
+  /*  background-image: linear-gradient(to right, rgb(216, 74, 64),  rgb(221,121,121) 59%, rgb(255, 218, 216) ); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    z-index: 10;
+}
+
+.navegacion h1 {
+    color: white;
+}
+
+.navegacion img {
+    width: 6rem;
+}
+
+.navegacion .nav-links {
+    list-style: none;
+}
+
+.navegacion .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navegacion .nav-links li:hover {
+    transform: scale(1.2);
+}
+
+.navegacion .nav-links a {
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+    color: crimson;
+}
+
+.bottom {
+    font-weight: 700;
+    color: whitesmoke;
+    padding: 9px 25px;
+    background: whitesmoke;
+    border: none;
+    border-radius: 50px;
+
+}
+
+.bottom:hover {
+    background-color: rgba(245, 245, 245, 0.842);
+    
+}
+
+.btn_registry {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+
+}
+
+menu {
+    grid-area: menu;
+
+}
+
+nav,
+main,
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: crimson;
+    color: aliceblue;
+}
+
+nav {
+
+    color: aliceblue;
+}
+
+.combos {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media screen and (min-width:737px) {
+    .combos {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media screen and (min-width: 1102px) {
+    .combos {
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+    }
+}
+
+.item {
+    border-radius: 30px 30px 30px 30px;
+    border: solid ;
+    border-color: lightblue;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto;
+
+}
+
+.item img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item h3 {
+    text-justify: auto;
+}
+.item button {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    height: 50px;
+    background-color: lightcoral;
+    border: none;
+    color: white;
+}
+.item button:hover {
+    background-color: coral;
+    font-weight: bold;
+    color: white;
+
+}
