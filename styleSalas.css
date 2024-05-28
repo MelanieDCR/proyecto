@@ -10,7 +10,7 @@
 
 .menu {
     
-    position: sticky;
+    position: sticky; /*posicionamiento*/
     top: 0;
 }
 
@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;  /*Valores de Align-Items*/
     height: 100px;
     z-index: 10;
 }
@@ -84,7 +84,7 @@
     max-width: 1200px;
     margin: auto;
     padding: 40px 0;
-    /*Flexbox*/
+    align-content: center;
     display: flex;
     gap: 20px; 
     display: grid;
@@ -94,7 +94,7 @@
 
 .card {
     border-radius: 10px;
-    /*Flexbox*/
+    align-content: center;
     text-align: left;
     width: 100%;
 
@@ -133,7 +133,7 @@
 }
 
 
-
+/* Opacity */
 .video{
     width: 100%;
     height: 100%;
